@@ -1,0 +1,23 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "windows.h": "c",
+        "string.h": "c",
+        "cctype": "c",
+        "climits": "c",
+        "cmath": "c",
+        "cstdarg": "c",
+        "cstdint": "c",
+        "cstdio": "c",
+        "cstdlib": "c",
+        "type_traits": "c",
+        "limits": "c",
+        "*.tcc": "c",
+        "typeinfo": "c",
+        "stdlib.h": "c"
+    },
+    "editor.fontSize": 14,
+    "editor.indentSize": "tabSize",
+    "editor.tabSize": 4,
+    
+}

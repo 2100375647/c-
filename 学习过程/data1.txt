@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+    FILE *pf1=fopen("C:\\Users\\21003\\Desktop\\git-warehouse\\data1.txt","r");
+    if(pf1==NULL){
+        return 1;
+    }
+    FILE *pf2=fopen("C:\\Users\\21003\\Desktop\\git-warehouse\\data2.txt","w");
+    if(pf2==NULL){
+        fclose(pf1);
+        pf1=NULL;
+        return -1;
+    }
+    else{
+        int ch;
+        while((ch=fgetc(pf1))!=-1){
+            fputc(ch,pf2);
+        }
+    }
+    fclose(pf1);
+    pf1=NULL;
+    fclose(pf2);
+    pf2=NULL;
+    return 0;
+}
